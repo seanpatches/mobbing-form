@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+    <header>    <a href="../index.html"><img src="../assets/og-curly-boi.jpg"></a>
+    </header>
+
+    <main>
+        <section>
+            <form id=form>
+
+                <label>Full Name: 
+                    <input type="name" placeholder="Full Name" id="name">
+                </label>
+                <br>
+
+                <label>Address: 
+                    <input type="address" placeholder="Full Name" id="street">
+                </label>
+                <br>
+
+                <label>City: 
+                    <input type="text" id="city" placeholder="city">
+                </label>
+                <br>
+
+                State: <select id="state">
+                        <option value="">Select State </option>
+                        <option value="california">California</option>
+                        <option value="oregon">Oregon</option>
+                        <option value="washington">Washington</option>
+                        <option value="other">Other</option>
+                    </select>
+                
+                <section>
+                <fieldset><legend> Where do you hide your keys?</legend>
+            
+                    <label>
+                    <input type="radio" name="key"
+                    value="doormat"> Under the doormat
+                    </label>
+
+                    <label>
+                    <input type="radio" name="key"
+                    value="flower-pot"> In the flower pot
+                    </label>
+
+                    <label>
+                    <input type="radio" name="key"
+                    value="rock"> In the fake rock
+                    </label>
+
+                </fieldset>
+                <hr>
+
+                <fieldset>
+                    <legend>
+                        How you like Pizza?
+                    </legend>
+                    
+                    <label>
+                    <input 	oninvalid="setCustomValidity('Think again...')" oninput="setCustomValidity('')" required type="checkbox" name="toppings" value="pineapple"> Pineapple
+                    </label>
+
+                    <label>
+                    <input type="checkbox" name="toppings" value="anchovies"> Anchovies
+                    </label>
+
+                    <label>
+                    <input type="checkbox" name="toppings" value="mushrooms"> Mushroom
+                    </label>
+
+                    <label>
+                    <input type="checkbox" name="toppings" value="ramen"> Ramen
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend> How curly is it? </legend>
+                    <input type="range" min="0" max="10" id="curliness">
+                    <span id="averageCurl"> 0 </span>
+                </fieldset>
+                
+
+                <button id="submit">Submit</button>
+        </section>
+            </form>
+    </main>
+    <!-- email address -->
+
+    <!-- mother's maiden name -->
+
+    <!-- name first pet -->
+
+    <!-- gullible scale -->
+
+    <!-- radio keys -->
+
+    <!-- submission button to thank you page -->
+
+    <textarea id=printSubmission> </textarea>
+    <script src="main.js"> </script>
+</body>
+</html>
