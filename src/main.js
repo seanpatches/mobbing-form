@@ -22,7 +22,7 @@ submit.addEventListener('submit', function(){
     for(let i = 0; i < pizza.length; i++){
         const toppingChoices = pizza[i];
         if(toppingChoices.checked) {
-            pizzaPreference[i] = toppingChoices.value;      
+            pizzaPreference.push(toppingChoices.value);  
         }
     }
 
@@ -36,7 +36,8 @@ submit.addEventListener('submit', function(){
         curl: curlyRange.value
     };
 
-    JSON.stringify(appSubmission);
-    console.log(appSubmission);
+    const serialize = JSON.stringify(appSubmission);
+    window.localStorage.setItem('appSubmission', serialize);
     
+    window.location = './thanks.html';
 });
